@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "helmet": "^8.0.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.11.3",
+    "nodemon": "^3.1.7",
+    "sequelize": "^6.37.4",
+    "sequelize-typescript": "^2.1.6",
+    "tsc": "^2.0.4",
+    "undici-types": "^6.19.8"
+  },
+  "scripts": {
+    "start": "npx nodemon",
+    "build": "rimraf ./build && tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+   
+    "@types/node": "^22.7.4",
+    "@types/sequelize": "^4.28.20",
+    "typescript": "^5.6.2"
+  }
+}
