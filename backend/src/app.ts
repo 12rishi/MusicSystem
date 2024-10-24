@@ -1,6 +1,6 @@
 import expresss, { Application } from "express";
 import * as dotenv from "dotenv";
-
+import userRoute from "./routes/userRoute";
 dotenv.config();
 import "./database/connection";
 import helmet from "helmet";
@@ -22,6 +22,7 @@ app.use(
     noSniff: true,
   })
 );
+app.use("/", userRoute);
 const port: number = Number(process.env.PORT) || 3000;
 app.listen(port, () => {
   console.log("server has connected at port no 3000");
